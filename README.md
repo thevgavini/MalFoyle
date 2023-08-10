@@ -2,6 +2,8 @@
 
 MalFoyle is an open-source Command Line Interface (CLI) tool developed in Python for detecting malicious files using hash-based queries against a popular malware database. It provides key information about the file, including vendor verdicts and YARA rules, allowing users to identify potentially harmful files quickly and efficiently.
 
+![MalFoyle](https://i.imgur.com/rlk6bS2.png)
+
 ## Features
 
 - Calculate and retrieve SHA256 hash of a given file.
