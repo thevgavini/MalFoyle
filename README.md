@@ -21,7 +21,7 @@ Before installing MalFoyle, make sure you have Python 3 and pip3 installed on yo
    ```bash
    git clone https://github.com/thevgavini/MalFoyle.git
    cd MalFoyle
-   sudo bash installer.sh`
+   sudo bash installer.sh
 This will install the required dependencies, make the script executable, and create a symbolic link for easy access.
 
 ## Usage
