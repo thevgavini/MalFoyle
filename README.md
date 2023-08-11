@@ -1,6 +1,10 @@
+
+
 # MalFoyle - Malicious File Detection System
 
 MalFoyle is an open-source Command Line Interface (CLI) tool developed in Python for detecting malicious files using hash-based queries against a popular malware database. It provides key information about the file, including vendor verdicts and YARA rules, allowing users to identify potentially harmful files quickly and efficiently.
+
+
 
 ![MalFoyle](https://i.imgur.com/rlk6bS2.png)
 
@@ -26,6 +30,12 @@ This will install the required dependencies, make the script executable, and cre
 
 ## Usage
 
+
+https://github.com/thevgavini/MalFoyle/assets/77669880/ebe11cd1-ec50-4393-8329-95611c4f13f1
+
+
+
+
 To use MalFoyle, simply open your terminal and type `malfoyle` followed by the desired options.
 
 ### Command Line Options
@@ -46,8 +56,18 @@ To use MalFoyle, simply open your terminal and type `malfoyle` followed by the d
 3.  Analyze a file and save results to a text file:
 	`malfoyle -f /path/to/your/file -o analysis_results`
     `malfoyle -s <file_hash> -o analysis_result`
-	
-	 
+
+##   Limitations
+
+While MalFoyle is a valuable tool for file analysis, there are some limitations to keep in mind:
+
+-   **Database Reliance:** MalFoyle's accuracy depends on the quality and current state of the underlying malware database. Changes to the database may affect analysis results.
+-   **Hash-Based Detection:** MalFoyle's primary method of analysis is hash-based, which might miss newer or polymorphic malware that isn't yet indexed.
+-   **Potential False Results:** Like any detection tool, MalFoyle might occasionally generate false positives or negatives, so careful consideration of results is recommended.    
+-   **Static Analysis:** MalFoyle focuses on static attributes and doesn't consider dynamic runtime behaviors, potentially limiting its ability to detect certain types of threats.
+    
+
+Despite these limitations, MalFoyle provides a quick and convenient way to assess files for potential security risks. Its simplicity and ease of use make it a valuable addition to your security toolkit.
 
 ## Future Scope and Applications
 
